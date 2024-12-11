@@ -416,6 +416,8 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 
 /* Fixed Social Icons */
+
+
 aside.sidebar {width:56px; position:relative; text-align:center; float:right; right:0;}
 .sidebar span.share-text {margin-bottom:7px; font-size:11px; color:#7d9caf; display:none}
 /* .fixed-social-icons {position:absolute; top:200px; text-align:center;} */
@@ -541,6 +543,10 @@ body .cky-prefrence-btn-wrapper .cky-btn-preferences {order: 3;}
 
 @media only screen and (min-width: 1024px){
     .hide-in-desktop{display: none!important;}
+	#sticky-main{position: relative;}
+	#sticky-sidebar{width:56px; top: 0; right: 0; position: absolute; text-align:center; }
+	.fixed-social-icons.fixed{position: fixed; top: 0;}
+	.fixed-social-icons.bottom{bottom: 5px;}
 }
 
 

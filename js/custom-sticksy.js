@@ -5,57 +5,53 @@
  */
 
 (function ($) {
-    var $w = $(window);
+  var $w = $(window);
 
-    $.fn.stickySidebar = function (options) {
-        var o = $.extend({}, $.fn.stickySidebar.defaults, options),
-            $c = $(o.container);
+  $.fn.stickySidebar = function (options) {
+    var o = $.extend({}, $.fn.stickySidebar.defaults, options),
+      $c = $(o.container);
 
-        return this.each(function () {
-            var $s = $(this),
-                sh = $s.outerHeight(),
-                originalMarginTop = parseInt($s.css('margin-top'), 10),
-                top = $s.offset().top - o.offsetTop - originalMarginTop,
-                bottom = $c.offset().top + $c.outerHeight() - o.offsetTop,
+    return this.each(function () {
+      var $s = $(this),
+        sh = $s.outerHeight(),
+        originalMarginTop = parseInt($s.css("margin-top"), 10),
+        top = $s.offset().top - o.offsetTop - originalMarginTop,
+        bottom = $c.offset().top + $c.outerHeight() - o.offsetTop,
+        handleScroll = function () {
+          var scroll = $w.scrollTop();
+          if (scroll > top) {
+            if (scroll + sh + o.offsetBottom > bottom && o.bottom) {
+              $s.removeClass(o.stuckClass);
+              $s.addClass(o.bottomClass);
+            } else {
+              $s.css("margin-top", o.offsetTop + originalMarginTop);
+              $s.addClass(o.stuckClass);
+            }
+          } else {
+            $s.css("margin-top", originalMarginTop);
+            $s.removeClass(o.stuckClass);
+            $s.removeClass(o.bottomClass);
+          }
+        };
 
-                handleScroll = function () {
-                    var scroll = $w.scrollTop();
-                    if (scroll > top) {
-                        if (scroll + sh + o.offsetBottom > bottom && o.bottom) {
-                            $s.removeClass(o.stuckClass);
-                            $s.addClass(o.bottomClass);
-                        } else {
-                            $s.css('margin-top', o.offsetTop + originalMarginTop);
-                            $s.addClass(o.stuckClass);
-                        }
-                    } else {
-                        $s.css('margin-top', originalMarginTop);
-                        $s.removeClass(o.stuckClass);
-                        $s.removeClass(o.bottomClass);
-                    }
-                };
-
-            $w.on('scroll', handleScroll);
-        });
-
-    };
-
-    $.fn.stickySidebar.defaults = {
-        stuckClass: 'fixed',
-        bottomClass: 'bottom',
-        container: '.general-default-article-section',
-        offsetTop: 0,
-        offsetBottom: 0,
-        bottom: true
-    };
-
-}(jQuery));
-
-
-jQuery(document).ready(function(){
-    jQuery('.sticky-sidebar').stickySidebar({
-        container: '.general-default-article-section',
-        offsetBottom: 5
+      $w.on("scroll", handleScroll);
     });
-})
+  };
 
+  $.fn.stickySidebar.defaults = {
+    stuckClass: "fixed",
+    bottomClass: "bottom",
+    container: "#sticky-main",
+    offsetTop: 0,
+    offsetBottom: 0,
+    bottom: true,
+  };
+})(jQuery);
+
+jQuery(document).ready(function () {
+  jQuery(".fixed-social-icons").stickySidebar({
+    container: "#sticky-main",
+    offsetTop: document.querySelector("header").getBoundingClientRect().height,
+    offsetBottom: 5,
+  });
+});
