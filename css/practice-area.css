@@ -1,0 +1,42 @@
+@import url("../css/_customizable-cta.css");
+@import url("../css/_experts-module.css");
+@import url("../css/_featured-insights-module.css");
+@import url("../css/_intro-module.css");
+
+.hero-banner-main {min-height: 588px;}
+
+.pa-inner {padding: 0 80px;}
+.practice-area-container {clear: both; width: 100%; padding:95px 0 0;}
+.practice-area-content {clear: both; position: relative; width: 100%; background: var(--white); padding: 0 0 89px 0;}
+.practice-area-content h2, .practice-area-content h3 {color: var(--clc-dark-txt);}
+.practice-area-content:after {content: ''; position: absolute; top: -80px; right: 0; border-top: 80px solid transparent; border-left: 80px solid var(--white); width: 0; z-index: -1;}
+.practice-area-content:before {content: ""; background: var(--white); left: 0; width: calc(100% - 80px); position: absolute; top: -80px; height: 100%; z-index: -1;}
+.practice-area-content .container-sm p:first-of-type {font-size: 1.25rem; line-height: 1.4; margin-bottom: 42px;}
+.practice-area-content .container-sm ul {padding: 3px 0 0 0; margin-bottom:41px;}
+
+.video-wrap {top:-160px; margin-bottom: -81px;}
+
+
+.experts-module {padding: 78px 0 88px 0;}
+.customizable-cta {padding: 88px 0 45px;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+   
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	.pa-inner {padding: 0 40px;}
+	.video-wrap {margin-bottom: -110px;}
+	.featured-insights-module {padding: 70px 0 70px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.pa-inner {padding: 0 20px;}
+	.practice-area-container {padding: 26px 0 0;}
+	.practice-area-content::before {top: -20px; height: 20px;}
+	.practice-area-content::after {border-top: 20px solid transparent; border-left: 20px solid var(--white); top: -20px;}
+	
+	.video-wrap .video-thumbnail {height: 166px;}
+	.video-wrap {margin-bottom:-60px; top: -100px;}
+	
+	.experts-module {padding: 40px 0 46px 0;}
+}

@@ -1,0 +1,50 @@
+.customizable-cta {float: left; width: 100%; padding:88px 0 120px;}
+.customizable-cta h2 {color: var(--clc-dark-txt); margin-bottom: 23px;}
+.customizable-cta .cta-wrap {padding: 0 56px; justify-content: space-between; align-items: stretch; position: relative;}
+.customizable-cta .cta-wrap:before {content: ""; width: 8px; height: 100%; position: absolute; left: 0; top:0; display: block; background: var(--clc-border);}
+.customizable-cta .cta-wrap:after {content: ""; width: 8px; height: 100%; position: absolute; right: 0; top:0; display: block; background: var(--clc-border);}
+.customizable-cta .cta-wrap .cta-lt {flex-grow: 1; margin: 0 6% 0 0; width: 36%; padding: 20px 0;}
+.customizable-cta .cta-wrap .cta-lt .cta-txt {display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+height: 100%;}
+.customizable-cta .cta-wrap .cta-lt p {font-size: 1.25rem; line-height: 1.4; margin-bottom: 26px;}
+.customizable-cta .cta-wrap .cta-rt {width:calc(100% - 47.25%); position: relative;}
+.customizable-cta .cta-wrap .cta-rt:before {width:208px; height:208px; content: ""; position: absolute; top: 0; bottom: 0; margin: auto; left: -32px; clip-path: polygon(50% 50%, 0 0, 0 100%); background: rgb(145,20,50); background: linear-gradient(0deg, rgba(145,20,50,1) 50%, rgba(186,0,50,1) 50%);}
+.customizable-cta .cta-wrap .cta-rt .cta-thumb {height: 100%;}
+.customizable-cta .cta-wrap .cta-rt .cta-thumb img{width: 100%; height: 100%; font-family: "object-fit: cover"; object-fit: cover;
+	-o-object-fit: cover; object-position: 50% 50%; -o-object-position: 50% 50%;}
+
+.customizable-cta.blue-bg {background: var(--clc-blue-bg); padding: 80px 0;}
+
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	.customizable-cta {padding: 70px 0 40px!important}	
+	.customizable-cta .container {padding: 0 40px;}
+	.customizable-cta h2 {margin-bottom: 22px;}
+	.customizable-cta .cta-wrap {padding: 0 28px;}	
+	.customizable-cta .cta-wrap .cta-lt .cta-txt {max-width: 580px;}
+	.customizable-cta .cta-wrap .cta-lt .cta-txt small {margin-bottom: 22px;}
+	.customizable-cta .cta-wrap .cta-rt {height: 416px;}
+	.customizable-cta .cta-wrap .cta-rt::before {bottom: -32px; width: 188px; height: 188px;}
+	.customizable-cta .cta-wrap .cta-rt {margin:0 0 63px 0;}	
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+	.customizable-cta .cta-wrap {padding: 0 24px; flex-direction: column-reverse;}	
+	.customizable-cta .cta-wrap .cta-lt {width: 100%;}
+	.customizable-cta .cta-wrap .cta-lt {padding: 0; margin: 0;}
+	.customizable-cta .cta-wrap .cta-rt {width: 100%;}
+	.customizable-cta .cta-wrap .cta-rt::before {transform: rotate(-90deg); top: inherit; left: 0;}
+	
+	
+	
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.customizable-cta {padding: 48px 0 0 0!important;}
+	.customizable-cta .cta-wrap .cta-rt {margin:0 0 47px 0;}
+	.customizable-cta .cta-wrap .cta-rt::before {bottom: -24px; width: 96px; height: 96px;}
+	.customizable-cta .cta-wrap .cta-lt p {line-height: 1.44; font-size: 1.125rem; margin-bottom: 24px;}
+	.customizable-cta .cta-wrap .cta-lt .button {width: 100%;}
+	.customizable-cta h2 {font-size: 1.75rem; line-height: 1.14;}
+}

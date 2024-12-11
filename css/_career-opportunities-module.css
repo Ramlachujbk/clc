@@ -1,0 +1,80 @@
+/* Careers oppourtunities section start */
+.join-clc-module{ position: relative; background: rgba(135, 163, 184, 0.2); padding: 80px 0 90px; clear: both;}
+.join-clc-main {justify-content: space-between;}
+.join-clc-lt { width: 27.5%; margin:-1px 10% 0 0;}
+.join-clc-lt h4 { color: var(--clc-dark-txt); margin-bottom: 25px;}
+.join-clc-lt p {line-height: 1.5; font-size: 1rem; margin-bottom: 25px; color: #27333d;}
+.join-clc-lt .select-bx {width: 100%; margin-bottom: 24px;}
+body .selectBox-dropdown{background: var(--white);}
+
+.join-clc-rt {width: calc(100% - 37.5%);}
+.join-clc-list { width: 100%; background:var(--white); justify-content: space-between; padding: 16px 22px 16px 16px; margin-bottom: 32px; align-items: center;}
+.join-clc-list .join-lt {display: inline-block; width:calc(100% - 14%); font-size: 0;}
+.join-clc-list .job-post-date {width: 56px; padding:6px 4px 4px 4px; font-size: 0.875rem; line-height: 1.14; letter-spacing: 1.4px; font-family: "sweet-sans-pro", sans-serif; font-weight: 900; text-align: center; background-color: #692933; text-transform: uppercase; color: var(--white); height: 56px; margin: 0 24px 0 0; display: inline-block; vertical-align: top;}
+.join-clc-list .job-post-date span {display: flex; align-items: center; height: 100%;}
+.join-clc-title {display: inline-block; width: calc(100% - 84px);}
+.join-clc-title h5 { line-height: 1.17;  color:var(--clc-dark-txt); margin-bottom: 3px; letter-spacing: 1px;}
+
+.join-clc-title .job-info {clear: both; width: 100%; gap:10px 24px;}
+.join-clc-title .job-info span {font-size: 0.875rem; font-weight: 900; letter-spacing: 1.4px; font-family: "sweet-sans-pro", sans-serif; text-transform: uppercase; color: var(--clc-border); padding: 0 0 0 25px; position: relative; width: fit-content;}
+.join-clc-title .job-info span.job-company {padding: 0 0 0 28px; flex: 1;}
+
+.join-clc-title .job-info span.job-loc:after {content: "\f041"; font-family: "Font Awesome 6 Pro"; line-height: normal; position: absolute; left: 0; top: 0; bottom: 0; margin: auto; font-size:1rem; font-weight:900; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; color: var(--clc-border);}
+.join-clc-title .job-info span.job-company:after {content: "\f0c0"; font-family: "Font Awesome 6 Pro"; line-height: normal; position: absolute; left: 0; top: 0; bottom: 0; margin: auto; font-size:1rem; font-weight:900; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; color: var(--clc-border);}
+.join-clc-btn {margin-left: auto;}
+
+.load-more {margin-top: -4px;}
+.load-more .txt-btn::after {transform: rotate(90deg);}
+.load-more .txt-btn:hover{padding-right:25px;}
+
+
+@media only screen and (max-width: 1299px) and (min-width:1024px){	
+	.join-clc-list .join-lt {width: 100%;}
+	/* .join-clc-title .job-info span {width: 40%;}
+	.join-clc-title .job-info span.job-company {width: 55%;} */
+	.join-clc-btn {margin: 20px 0 0 0;}
+	
+	.client-module .client-module-text {padding: 49px 40px 41px 90px;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+	.join-clc-lt {width: 100%; margin: 0 0 30px 0;}
+	.join-clc-rt {width: 100%;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+	.join-clc-module {padding: 39px 0 37px;}
+	.join-clc-lt h4 {margin-bottom: 23px;}
+	.join-clc-lt p {margin-bottom: 26px;}
+	.join-clc-lt .select-bx {margin: 0 0 0 3.6%; width: 30.93%;}
+	.join-clc-lt .select-bx:first-child {margin-left: 0;}
+	.join-clc-lt .two-dropdown form{display: flex; flex-wrap: wrap;}
+	/* .join-clc-title .job-info span {width: 39.6%;} */
+	.join-clc-title {margin-top: 2px;}
+	.join-clc-title h5 {margin-bottom: 5px;}
+	.join-rt-inner {padding: 0 0 1px 0;}
+}
+
+@media screen and (max-width:767px) and (min-width:200px) {
+	.join-clc-module {padding:39px 0 38px;}
+	.join-clc-module small {margin-bottom: 18px;}
+	.join-clc-lt h4 {margin-bottom: 19px;}
+	.join-clc-lt p {margin-bottom: 21px;}
+	.join-clc-lt {margin: 0 0 24px 0;}
+	.join-clc-lt .select-bx {margin-bottom: 20px;}
+	
+	
+	.join-clc-list {padding: 16px 22px 14px 14px;}
+	.join-clc-list .join-lt {width: 100%; margin: 0 0 9px 0;}
+	.join-clc-list .job-post-date {width: auto; height: auto; padding: 5px 8px 7px 8px; margin: 0 0 16px 0;}
+	.join-clc-title {width: 100%;}
+	.join-clc-title h5 {font-size: 1.25rem; letter-spacing: normal; margin-bottom: 9px;}
+	.join-clc-title .job-info {gap: 0;}
+	.join-clc-title .job-info span, .join-clc-title .job-info span.job-company {width: 100%; margin: 0 0 5px 0;}
+	.join-clc-title .job-info span:after {width: 25px; text-align: center;}
+	.join-clc-title .job-info span  {padding: 0 0 0 31px!important;}
+	.join-clc-btn {margin-left: 0;}
+ 
+ }
+
+

@@ -1,0 +1,55 @@
+@import url("../css/_customizable-cta.css");
+@import url("../css/_blocks-module.css");
+@import url("../css/_career-opportunities-module.css");
+@import url("../css/_member-firms-module.css");
+@import url("../css/_clients-module.css");
+
+.hero-banner-main {min-height:600px;}
+.hero-banner-main .hero-banner-text h1 {max-width: 410px;}
+
+.blocks-article {padding-bottom: 0;}
+
+.client-module .client-module-thumb .client-img {z-index: 1;}
+.client-module .client-module-text {padding: 89px 80px 81px 136px;}
+
+.perks-benefits {float: left; width: 100%; padding:68px 0 86px; position: relative; z-index: 1;}
+
+.perks-benefits .perks-benefits-head {max-width: 1020px; margin-bottom: 25px;}
+.perks-benefits .perks-benefits-head h3 {margin-bottom: 31px; color: var( --clc-dark-txt);}
+.perks-benefits .perks-benefits-head p {color: var( --clc-dark-txt); font-size: 1.5rem; line-height: 1.33;}
+
+
+.perks-benefits-list {width:20%; margin:56px 0 0 4.1%;}
+.perks-benefits-list:nth-child(4n+1) {margin-left: 0;}
+.perks-benefits-list .perks-benefits-thumb {position: relative; padding: 0 0 20px 15px; margin: 0 0 14px 0; z-index: 1;}
+.perks-benefits-list .perks-benefits-thumb:after {width: 0; height: 0; border-width: 64px 0 0 64px; border-color: transparent transparent transparent var(--white); border-style: solid; content: ""; display: block; position: absolute; left: 0; bottom: 0; z-index: -1;}
+.perks-benefits-list .perks-benefits-thumb img {width:auto; height: 41px;}
+.perks-benefits-list h5 {margin-bottom: 13px;}
+.perks-benefits-list p {font-size: 1rem; line-height: 1.5; margin-bottom: 14px;}
+
+.customizable-cta {padding: 78px 0 45px;}
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1299px) and (min-width:1024px){
+	.perks-benefits-list {width: 21.9%;}
+	
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	.client-module .client-module-text {width: 100%; padding: 49px 40px 40px 40px;}
+	
+	.perks-benefits {padding: 30px 0 86px;}
+	.perks-benefits-list, .perks-benefits-list:nth-child(4n+1) {width: 47%; margin: 56px 0 0 6%;}
+	.perks-benefits-list:nth-child(2n+1) {margin-left: 0;}
+	.perks-benefits .perks-benefits-head p {font-size: 1.25rem; line-height: 1.4;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.perks-benefits {padding:94px 0 49px;}
+	.perks-benefits .perks-benefits-head {margin-bottom: 16px;}
+	.perks-benefits .perks-benefits-head h3 {font-size: 1.75rem; margin-bottom: 22px;}
+	.perks-benefits .perks-benefits-head p {font-size: 1.125rem; line-height: 1.44;}
+	.perks-benefits-list {width: 100%; margin: 41px 0 0 0;}
+	
+	.client-module .client-module-text {padding: 69px 20px 21px 20px; width: 100%;}
+	.client-module .client-module-thumb .client-img {position: relative;}
+	
+}

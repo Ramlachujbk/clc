@@ -1,0 +1,37 @@
+@import url("../css/_micro-cta.css");
+@import url("../css/_featured-insights-module.css");
+@import url("../css/_news-slider-module.css");
+@import url("../css/_share-icons.css");
+
+.hero-banner-main {min-height: 600px;}
+
+.general-default-article-section {float: left; width: 100%; padding:80px 0 0;}
+.general-default-article-section h3 {padding-top: 48px;}
+.general-default-article-section h5 {padding-top: 38px;}
+.general-default-article-section ul, .general-default-article-section ol {padding: 3px 0 0 0;}
+
+.video-wrap {margin: 65px 0 23px 0;}
+
+.fea-category span::before{content: "\f02c";}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+   
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+	.featured-insights-module {padding: 86px 0 40px 0;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+	.general-default-article-section {padding: 20px 0 0;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+	.featured-insights-module {padding: 48px 0 0;}
+	.general-default-article-section h4 {padding-top: 25px;}
+	.general-default-article-section h3 {padding-top: 24px;}
+	.general-default-article-section h5 {padding-top: 22px; letter-spacing: 1px;}
+	.general-default-article-section ul, .general-default-article-section ol {margin-bottom: 16px;}
+	
+	.video-wrap {margin: 42px 0 13px 0;}
+	.default_main .default-lt .fullwidth_image {margin: 41px 0 16px;}
+	.video-caption::after {bottom: 35px;}
+}

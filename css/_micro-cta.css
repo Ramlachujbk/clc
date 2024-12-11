@@ -1,0 +1,64 @@
+.micro-cta {float: left; width: 100%; margin-top: 45px; margin-bottom: 16px;}
+.micro-cta h2 {color: var(--clc-dark-txt); margin-bottom: 23px;}
+.micro-cta .micro-cta-main {padding:0 31px; position: relative;}
+.micro-cta .micro-cta-main:before {content: ""; width: 8px; height: 100%; position: absolute; left: 0; top:0; display: block; background: var(--clc-border);}
+.micro-cta .micro-cta-main:after {content: ""; width: 8px; height: 100%; position: absolute; right: 0; top:0; display: block; background: var(--clc-border);}
+.micro-cta .micro-cta-wrap {justify-content: space-between; position: relative; background: var(--clc-blue-bg);}
+.micro-cta .micro-cta-wrap .micro-cta-lt {flex-grow: 1; margin: 0 4% 0 0; width: 37%; padding:47px 42px 46px;}
+.micro-cta .micro-cta-wrap .micro-cta-lt .micro-cta-txt {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: 100%;}
+.micro-cta .micro-cta-wrap .micro-cta-lt .micro-cta-txt small {margin-bottom: 22px;}
+.micro-cta .micro-cta-wrap .micro-cta-lt .micro-cta-txt h4 {margin-bottom: 23px; padding-top: 0;}
+.micro-cta .micro-cta-wrap .micro-cta-lt .micro-cta-txt p {font-size: 1.25rem; line-height: 1.4; margin-bottom: 26px;}
+.micro-cta .micro-cta-wrap .micro-cta-rt {width:calc(100% - 49.91%); position: relative;}
+.micro-cta .micro-cta-wrap .micro-cta-rt:before {width:176px; height:176px; content: ""; position: absolute; top: 0; bottom: 0; margin: auto; left: -44px; clip-path: polygon(50% 50%, 0 0, 0 100%); background: rgb(145,20,50); background: linear-gradient(0deg, rgba(145,20,50,1) 50%, rgba(186,0,50,1) 50%);}
+.micro-cta .micro-cta-wrap .micro-cta-rt .micro-cta-thumb {height: 100%;}
+.micro-cta .micro-cta-wrap .micro-cta-rt .micro-cta-thumb img {width: 100%; height: 100%; font-family: "object-fit: cover"; object-fit: cover; -o-object-fit: cover; object-position: 50% 50%; -o-object-position: 50% 50%;}
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1299px) and (min-width:1024px){
+   
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+	.micro-cta .micro-cta-wrap  {flex-direction: column-reverse;}	
+	.micro-cta .micro-cta-wrap  .micro-cta-lt {width: 100%;}
+	.micro-cta .micro-cta-wrap  .micro-cta-lt {margin: 0;}
+	.micro-cta .micro-cta-wrap  .micro-cta-rt {width: 100%;}
+	.micro-cta .micro-cta-wrap  .micro-cta-rt::before {transform: rotate(-90deg); top: inherit; left: 0;}	
+	
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	.micro-cta {padding: 70px 0 40px!important}	
+	.micro-cta .container {padding: 0 40px;}
+	.micro-cta h2 {margin-bottom: 22px;}
+	
+	.micro-cta .micro-cta-wrap .micro-cta-lt {padding: 0 40px 38px;}
+	.micro-cta .micro-cta-wrap .micro-cta-lt .micro-cta-txt small {margin-bottom: 21px;}
+	.micro-cta .micro-cta-wrap .micro-cta-lt .cta-txt {max-width: 580px;}
+	.micro-cta .micro-cta-wrap .micro-cta-lt .cta-txt small {margin-bottom: 22px;}
+	.micro-cta .micro-cta-wrap .micro-cta-rt {height: 416px;}
+	.micro-cta .micro-cta-wrap .micro-cta-rt::before {bottom: -32px; width: 188px; height: 188px; left: 40px;}
+	.micro-cta .micro-cta-wrap .micro-cta-rt {margin:0 0 71px 0;}
+	
+	.micro-cta, .default_main .default-lt .micro-cta.fluid-width {width: calc(100% + 80px)!important; left: -40px; margin: 0;}
+	
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.micro-cta {padding: 48px 0 0 0!important;}
+	.micro-cta .micro-cta-wrap  .micro-cta-rt {margin:0 0 47px 0;}
+	.micro-cta .micro-cta-wrap  .micro-cta-rt::before {bottom: -24px; width: 96px; height: 96px; left: 20px;}
+	.micro-cta .micro-cta-wrap  .micro-cta-lt p {line-height: 1.44; font-size: 1.125rem; margin-bottom: 24px;}
+	.micro-cta .micro-cta-wrap  .micro-cta-lt .button {width: 100%;}
+	.micro-cta h2 {font-size: 1.75rem; line-height: 1.14;}
+	.micro-cta .micro-cta-main {padding: 0 24px;}
+	.micro-cta .micro-cta-wrap .micro-cta-lt {padding: 0 20px 38px;}
+	.micro-cta .micro-cta-wrap .micro-cta-lt .micro-cta-txt h4 {padding: 0;}
+	.micro-cta .micro-cta-wrap .micro-cta-lt .micro-cta-txt small {margin-bottom: 21px;}
+	.micro-cta .micro-cta-wrap .micro-cta-rt .micro-cta-thumb {height: 160px;}
+	.micro-cta, .default_main .default-lt .micro-cta.fluid-width {padding: 0!important; margin: 25px 0 11px; left: 0; width: 100% !important;}
+	
+}

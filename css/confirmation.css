@@ -1,0 +1,18 @@
+@import url("../css/_webinars-events-module.css");
+
+.default-banner-section.split-banner {margin-bottom: -8px;}
+.default-banner-section.split-banner .banner-rt .banner-thumb {max-width: 402px;}
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1299px){
+	.default-banner-section.split-banner .banner-rt .banner-thumb {max-width: 350px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	
+	.webinars-events-module {padding: 48px 0 0;}
+	
+ 
+}

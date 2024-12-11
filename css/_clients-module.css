@@ -1,0 +1,57 @@
+.client-module {clear: both; padding:88px 0 156px 0; position: relative; overflow: hidden;}
+.client-module .client-module-wrap {position: relative;}
+.client-module .client-module-thumb {width: 47.5%; }
+.client-module .client-module-thumb .client-img {position: absolute; max-width: 672px; width: 100%; z-index: -1; transform: translateY(0); transition: all 0.8s ease-in-out; -webkit-transition: all 0.8s ease-in-out; -moz-transition: all 0.8s ease-in-out;}
+.client-module .client-module-text { background: rgb(145,20,50);
+background: linear-gradient(45deg, rgba(186,0,50,1) 50%, rgba(145,20,50,1) 50%); width:52.5%; padding:89px 80px 81px 80px; transform: translateY(68px); transition: all 0.8s ease-in-out; -webkit-transition: all 0.8s ease-in-out; -moz-transition: all 0.8s ease-in-out;}
+.client-module .client-module-text:before {content: ""; background: url("../images/quote-blue.svg") 0 0 no-repeat; display: block; width: 63px; height: 46px; margin: 0 0 54px 0;}
+.client-module .client-module-text small {color: var(--clc-blue); margin-bottom: 27px;}
+.client-module .client-module-text h2 {font-size: 3rem; margin-bottom: 30px;}
+.client-module .client-module-text h2 span {display: block; font-size: 1.5rem; letter-spacing: 1px; margin: 3px 0 0 0;}
+.client-module .client-module-text p {font-size: 1.75rem; font-weight: 900; line-height: 1.14; color: var(--white); font-family: "sweet-sans-pro", sans-serif; margin-bottom: 35px;}
+
+.client-module .client-module-text .client-details {color: var(--white); opacity: 0.75; font-weight: 700; font-size: 0.875rem; line-height: 1.5;}
+.client-module .client-module-text .client-name {font-size: 1rem; font-family: "sweet-sans-pro", sans-serif; color: var(--clc-dark-txt); font-weight: 900;}
+
+.client-module-wrap.animate .client-module-thumb .client-img {transform: translateY(60px);}
+.client-module:hover .client-module-thumb .client-img {transform: translateY(0);}
+.client-module-wrap.animate .client-module-text {transform: translateY(-30px);}
+.client-module:hover .client-module-text {transform: translateY(68px);}
+
+
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+	.client-module {padding: 88px 0;}
+	.client-module .client-module-text {padding: 49px 40px 41px 40px;}
+	.client-module .client-module-thumb .client-img {max-width: 500px;}
+	
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	.client-module {padding: 70px 0 30px;}
+	.client-module .client-module-thumb {width: calc(100% - 40px); margin-right: auto;}
+	.client-module .client-module-thumb .client-img {position: inherit; max-width: 100%;}
+	.client-module-wrap.animate .client-module-thumb .client-img {transform: translateY(20px);}
+	.client-module:hover .client-module-thumb .client-img {transform: translateY(64px);}
+	
+	.client-module .client-module-text {width: calc(100% - 40px); margin-left: auto; padding: 49px 40px 40px 40px; background: linear-gradient(35.5deg, rgb(186, 0, 50) 50%, rgb(145, 20, 50) 50%);}
+	.client-module .client-module-text::before {margin: 0 0 36px 0;}
+	.client-module .client-module-text .client-name {margin-bottom: 2px;}
+	.client-module-wrap.animate .client-module-text {transform: translateY(-64px);}	
+	.client-module:hover .client-module-text {transform: translateY(-100px);}
+	.client-module .client-module-text p {font-size: 1.5rem;line-height: 1.17; letter-spacing: 1px; margin-bottom: 20px;}
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.client-module {padding: 28px 0 4px;}
+	.client-module .client-module-thumb {width: calc(100% - 20px); margin-right: auto;}
+	.client-module .client-module-thumb .client-img {position: inherit; max-width: 100%;}
+	.client-module-wrap.animate .client-module-thumb .client-img {transform: translateY(20px);}
+	.client-module:hover .client-module-thumb .client-img {transform: translateY(44px);}
+	
+	.client-module .client-module-text {width: calc(100% - 20px); margin-left: auto; padding: 25px 20px 21px 20px; background: linear-gradient(57deg, rgb(186, 0, 50) 50%, rgb(145, 20, 50) 50%);}
+	.client-module .client-module-text::before {margin: 0 0 31px 0; width: 42px; height: 30px; background-size: 42px 30px;}
+	.client-module-wrap.animate .client-module-text {transform: translateY(-44px);}	
+	.client-module:hover .client-module-text {transform: translateY(-60px);}
+	.client-module .client-module-text p {font-size: 1.25rem;line-height: 1.2; margin-bottom: 21px;}
+}

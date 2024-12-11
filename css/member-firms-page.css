@@ -1,0 +1,30 @@
+@import url("../css/_customizable-cta.css");
+@import url("../css/_member-firms-module.css");
+@import url("../css/_featured-insights-module.css");
+@import url("../css/_clients-module.css");
+
+
+
+.member-firms-module {padding:76px 0 87px 0;}
+.split-head {margin: 0 0 47px 0;}
+.split-head .split-head-lt p {font-size: 1.25rem; line-height: 1.4; margin-top: 14px;}
+
+
+.customizable-cta {padding: 78px 0 45px;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+   
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.member-firms-module {padding: 40px 0 48px;}
+	.member-firms-module .split-head .split-head-lt p {margin: 19px 0 12px 0;}
+	.split-head {margin: 0 0 21px 0;}
+	.split-head-lt h1 {font-size: 3.5rem; line-height: 1;}
+	
+	
+}

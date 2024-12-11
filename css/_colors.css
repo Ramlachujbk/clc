@@ -1,0 +1,21 @@
+:root {
+    --white: #ffffff;
+	--blue: #13292b;
+	--black: #000000;
+	--crimson-glory: #ba0033;
+    --white-18: rgb(255 255 255 / 18%);
+    --white-25: rgb(255 255 255 / 25%);
+    --white-50: rgb(255 255 255 / 50%);
+    --white-85: rgb(255 255 255 / 85%);
+    --clc-text-18: #343840;
+    --clc-hoverbtn: #692933;
+    --clc-dark-txt: #142b40;
+	--clc-blue-txt: #2d3237;
+	--clc-blue: #a8d4e8;
+	--clc-border: #87a3b8;
+	--clc-input: rgba(168, 212, 232, 0.4);
+	--clc-blue-bg: rgba(168, 212, 232, 0.2);
+	--clc-head: #18476b;
+	--slate-color: #0d1f30;
+    --error: #fe611e;
+}

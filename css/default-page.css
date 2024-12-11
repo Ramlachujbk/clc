@@ -1,0 +1,73 @@
+@import url("../css/_customizable-cta.css");
+@import url("../css/_micro-cta.css");
+@import url("../css/_practice-areas-module.css");
+@import url("../css/_featured-insights-module.css");
+@import url("../css/_experts-module.css");
+@import url("../css/_member-firms-module.css");
+@import url("../css/_blocks-module.css");
+
+/* Default page */
+.general-default-article-section {float: left; width: 100%; padding:80px 0 0;}
+.general-default-article-section h3 {padding-top: 48px;}
+.general-default-article-section h4 {padding-top: 40px;}
+.general-default-article-section ul {padding: 3px 0 0 0;}
+.general-default-inner {background: var(--white); clear: both; max-width: 1216px; margin: 0 auto; padding: 63px 0;}
+.general-default-inner .container-md {max-width: 100%; padding: 0 80px;}
+
+.member-firms-module {padding:79px 0 0 0;}
+.blocks-article {padding-bottom: 0;}
+
+.practice-area-module {padding: 80px 0 88px;}
+.general-default-inner h5 {padding: 47px 0 0;}
+
+.experts-module {background: #D2D8DC; margin-top: 81px; margin-bottom: 80px;}
+.experts-module h3 {padding: 0;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+   
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	.optional-cta-module {padding: 60px 0 10px;} 
+	.general-default-inner .container-md {padding: 0 40px;}
+	.micro-cta {padding: 40px 0 0 !important}
+	
+	.fullwidth_image figure figcaption {right: -10.7%;}
+	.practice-area-module .practice-area-wrap .practice-area-inner {padding: 0 47px;}
+	.featured-insights-module {padding: 70px 0 70px;}
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.general-default-inner {padding: 0 0 21px;}
+	.general-default-inner h5 {padding: 18px 0 0;}
+	.general-default-article-section {padding:39px 0 0;}
+	.general-default-article-section h4 {padding-top: 33px;}
+	.general-default-article-section h3 {padding-top: 24px;}
+	
+	.general-default-article-section ul li {margin-bottom: 3px; line-height: 1.5;}
+	.general-default-article-section ul {padding-top:2px;}
+	.general-default-article-section ol li {margin-bottom: 8px; line-height: 1.5;}
+	.general-default-article-section ol {padding-top:2px;}
+	.general-default-inner .container-md {padding: 0;}
+	
+	.micro-cta .container {padding: 0;}
+	.common-micro-cta {margin-top: 36px; margin-bottom: 66px;}
+	
+	.optional-cta-module {padding: 35px 0 10px;}
+	.optional-cta-grid {margin: 0 0 70px 0;}
+	.optional-cta-wrap {margin-bottom: -11px;}
+	
+	.practice-area-module .practice-area-wrap .practice-area-inner {padding: 0 20px;}
+	.practice-area-module {padding: 40px 0 48px;}
+	.practice-area-module .practice-area-wrap {padding: 54px 0 36px;}
+	
+	.member-firms-module {padding: 40px 0 0 0;}
+	.customizable-cta.blue-bg {padding: 48px 0 40px 0 !important}
+	
+	table {margin: 40px 0 0;}
+	.video-wrap {margin: 41px 0 6px 0;}
+	.micro-cta {margin: 25px 0 15px;}
+	
+	.experts-module {margin-bottom: 38px; padding:16px 0 38px 0; margin-top: 40px;}
+   
+}

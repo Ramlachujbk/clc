@@ -1,0 +1,104 @@
+@import url("../css/_customizable-cta.css");
+@import url("../css/_featured-insights-module.css");
+@import url("../css/_practice-areas-module.css");
+@import url("../css/_experts-module.css");
+
+.hero-banner-main {min-height:600px;}
+.hero-banner-main .hero-banner-text h1 {max-width:485px;}
+.hero-banner-main .banner-right .banner-thumb {position: relative; top: -27px; right: 16.3%;}
+.banner-bg::after {clip-path: polygon(0 0, 47.2% 0, 94.4% 100%, 0% 100%);}
+
+.firm-container {float: left; width: 100%; padding: 80px 0 0;}
+.firm-main:before {content: ''; position: absolute; left: -1000%; width: 1000%; display: block; background: var(--white); height: 100%;}
+.firm-lt {width: calc(100% - 31.91%); background: var(--white); padding: 79px 80px 113px 0;}
+.firm-lt h3 {padding-top: 48px;}
+.firm-lt h4 {color: var(--clc-head);}
+.firm-lt h5 {padding-top: 38px;}
+.firm-lt ul, .firm-lt ol {padding: 3px 0 0 0;}
+.firm-lt .video-wrap .video-thumbnail {height: 445px;}
+
+/* Sidebar */
+.location-bucket {padding:32px 32px 25px 32px; clear: both; width: 100%; background: var(--clc-dark-txt); color: var(--white);}
+.location-bucket h4 {color: var(--white); text-transform: uppercase; border-bottom: 4px solid var(--crimson-glory); padding: 0 0 20px 0; margin-bottom: 24px;}
+.contact-address h6 {font-size: 1rem; line-height: 1.3; margin-bottom: 6px; text-transform: uppercase; color: var(--clc-blue);}
+.contact-address {font-size: 0.875rem; line-height: 1.43; border-bottom: 1px solid var(--crimson-glory); padding: 0 0 24px 0; margin: 0 0 32px 0;}
+.contact-address:last-child {border: 0 none; margin: 0; padding: 0;}
+.contact-address p {max-width: 158px; margin-bottom: 8px;}
+.contact-address .contact-details {font-weight: bold;}
+.contact-address .contact-details .contact-row {margin: 0 0 8px 0;}
+.contact-address .contact-details .cnt-type {width: 20px; color: var(--clc-blue); opacity: 0.75; font-weight: 900; margin: 0 8px 0 0;}
+.contact-address .contact-details a {color: var(--clc-text-18);}
+.contact-address .contact-details a:hover {color: var(--crimson-glory);}
+
+
+/* Events Bucket */
+.events-bucket {padding:33px 32px 30px 32px; clear: both; width: 100%;}
+.events-bucket h4 { margin-bottom: 32px;}
+.events-bucket .load-more .button {width: 100%;}
+.webinars-events-slide {width:100%; margin:0 0 48px 0; height: inherit!important; background: var(--white); overflow: hidden; display: inline-block;}
+.webinars-events-slide:last-child{margin-bottom: 30px;}
+.webinars-events-slide .thumb {height: 176px; overflow: hidden; -webkit-transition: height 0.5s; transition: height 0.5s; position: relative;}
+.webinars-events-slide .thumb .play-btn {width: 64px; height: 64px;}
+.webinars-events-slide .thumb .play-btn img {width: 24px; height: 30px;}
+.webinars-events-slide h6 {font-weight: bold; margin-bottom: 15px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;  overflow: hidden; color: var(--clc-dark-txt); font-size: 1.125rem; line-height: 1.33;}
+.webinars-events-slide h6:hover {color: var(--crimson-glory);}
+.webinars-events-slide .info span {width: 100%; margin: 0 0 9px 0;}
+.webinars-events-slide .we-txt {padding:32px 24px 15px; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; position: relative;}
+.webinars-events-slide .we-txt .button {opacity: 0; -webkit-transition: opacity 0.5s; transition: opacity 0.5s; position: absolute; margin: 20px 0 0 0;}
+
+.webinars-events-slide:hover .thumb {height: 136px;}
+.webinars-events-slide:hover .we-txt {padding: 32px 24px 85px;}
+.webinars-events-slide:hover .we-txt .button {opacity: 1;}
+
+.sidebar {background-color: rgba(135, 163, 184, 0.2);}
+
+
+
+
+.featured-insights-module {padding-top: 78px;}
+
+.practice-area-module {padding: 0;}
+.practice-area-main:before {content: ''; position: absolute; left: -1000%; width: 1000%; display: block; background: rgba(135, 163, 184, 0.2); height: 100%;}
+.practice-area-module .practice-area-wrap .practice-area-inner {padding-left:0;}
+
+.customizable-cta {padding-bottom:45px;}
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1299px) and (min-width:1024px){
+	.firm-lt {width: calc(100% - 38%); padding: 79px 40px 113px 0;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+	.hero-banner-main .banner-right {display: none;}
+	
+	.firm-lt {padding: 50px 0 113px 0;}
+	.featured-insights-module {padding: 70px 0 70px;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px){	
+	.hero-banner-main .hero-banner-text h1 {max-width: inherit;}
+	
+	.firm-container {padding: 0;}
+	.firm-lt {width: 100%; position: relative; padding-right: 0;}
+	.firm-lt::before {content: ''; position: absolute; left:-40px; width: 1000%; display: block; background: var(--white);height: 100%; top: 0; z-index: -1;}
+	.firm-main::before {display: none;}
+	
+	.sidebar {background: transparent; padding: 40px 0; position: relative;}
+	.sidebar::before {content: ''; position: absolute; left:-40px; width: 1000%; display: block; background-color: rgba(135, 163, 184, 0.2); height: 100%; top: 0; z-index: -1;}
+	
+	.events-bucket {padding: 33px 0 0 0;}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.hero-banner-main .banner-right {position: absolute; margin: 0; padding: 0; border: 0 none; top: 34px;}
+	.hero-banner-main .banner-right .banner-thumb {top: inherit; right: inherit; width: 91px; height: 100px;}
+	.hero-banner-main .hero-banner-text .btn {margin-bottom: -2px;}
+	
+	.firm-lt {padding: 39px 0 112px 0;}
+	.firm-lt .video-wrap .video-thumbnail {height: 188px;}
+	
+	.contact-address h6 {margin-bottom: 7px;}
+	.load-more {margin: 0;}
+	
+	.featured-insights-module {padding: 40px 0 46px;}
+}

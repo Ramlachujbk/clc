@@ -1,0 +1,54 @@
+.practice-area-module {float: left; width: 100%; padding: 90px 0 99px; position: relative; z-index: 1;}
+.practice-area-module .practice-area-wrap {clear: both; position: relative; padding:60px 0 37px; overflow: hidden;}
+.practice-area-module .practice-area-wrap:after {content: ''; position: absolute; width: 1100%; height: 1100%; top: 0; right: -489%;
+background: rgba(135, 163, 184, 0.2); transform-origin: 54% 0; transform: rotate(45deg); z-index: -1;}
+.practice-area-module .practice-area-wrap .practice-area-inner {padding: 0 80px; margin: 0 auto;}
+.practice-area-module .practice-area-head {max-width: 945px; margin-bottom: 23px;}
+.practice-area-module .practice-area-head h3 {margin-bottom: 31px; color: var( --clc-dark-txt);}
+.practice-area-module .practice-area-head p {color: var( --clc-dark-txt); font-size: 1.5rem; line-height: 1.33;}
+
+
+.practice-area-list {width:22.78%; margin: 89px 0 0 2.95%;}
+.practice-area-list:nth-child(4n+1) {margin-left: 0;}
+.practice-area-list .practice-area-thumb {position: relative; padding: 0 0 20px 15px; margin: 0 0 14px 0; z-index: 1;}
+.practice-area-list .practice-area-thumb:after {width: 0; height: 0; border-width: 64px 0 0 64px; border-color: transparent transparent transparent var(--white); border-style: solid; content: ""; display: block; position: absolute; left: 0; bottom: 0; z-index: -1;}
+.practice-area-list .practice-area-thumb img {width:auto; height: 41px;}
+.practice-area-list h5 {margin-bottom: 13px;}
+.practice-area-list p {font-size: 1rem; line-height: 1.5; margin-bottom: 14px;}
+
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1160px) and (min-width: 1024px) {
+	
+	.practice-area-list, .practice-area-list:nth-child(4n+1) {width: 30%; margin: 88px 0 0 5%;}
+	.practice-area-list:nth-child(3n+1) {margin-left: 0;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+	.practice-area-module .practice-area-wrap .practice-area-inner {padding:0 47px 0 0;}
+	.practice-area-module .practice-area-wrap::after {right: -476.9%;}
+	.practice-area-module .practice-area-wrap {padding:26px 0 38px;}
+	.practice-area-module .practice-area-head {max-width: 470px; margin-bottom: 30px;}
+	.practice-area-module .practice-area-head h3 {margin-bottom: 22px;}
+	.practice-area-module .practice-area-head p {font-size: 1.25rem; line-height: 1.4;}
+	.practice-area-list, .practice-area-list:nth-child(4n+1) {width:47%; margin:33px 0 0 6%;}
+	.practice-area-list:nth-child(2n+1) {margin-left: 0;}
+	.practice-area-list h5 {margin-bottom: 12px;}
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+	.practice-area {padding:40px 0 0; margin-bottom: -8px;}
+	.practice-area-list {width: 100%; margin:41px 0 0 0;}
+	.practice-area-list .practice-area-thumb {margin: 0 0 15px 0;}
+	.practice-area-list h5 {margin-bottom: 12px;}
+	
+	.practice-area-module .practice-area-wrap {padding:54px 0 21px;}
+	.practice-area-module .practice-area-wrap::after {right: -852%; transform-origin: 21% 0;}
+	.practice-area-module .practice-area-wrap .practice-area-inner {padding: 0 20px 0 0;}
+	.practice-area-module .practice-area-head p {font-size: 1.125rem; line-height: 1.44;}
+	.practice-area-module .practice-area-head h3 {margin-bottom: 21px; font-size: 1.75rem;}
+	.practice-area-module .practice-area-head {margin-bottom: 15px;}
+	
+}

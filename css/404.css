@@ -1,0 +1,17 @@
+@import url("../css/_customizable-cta.css");
+@import url("../css/_featured-insights-module.css");
+
+.default-banner-section.split-banner {margin-bottom: -8px;}
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+	.featured-insights-module {padding: 86px 0 40px 0;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+	.default-banner-section.split-banner {margin-bottom: 0;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.default-banner-section.split-banner .banner-rt .banner-thumb {max-width: 194px;}
+	.default-banner-section.split-banner {margin: 39px 0 0 0;}
+	.featured-insights-module {padding: 40px 0 0;}
+}

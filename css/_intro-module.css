@@ -1,0 +1,42 @@
+.intro {clear: both; width: 100%; padding: 79px 0 88px;}
+
+.intro-main {justify-content: space-between;}
+.intro-lt {width: 25%; flex-grow: 1; margin-right: 3%;}
+.intro-lt h2 {color: var(--clc-dark-txt); margin-bottom: 25px;}
+.intro-lt h4 {color: var(--clc-dark-txt); margin-bottom: 25px;}
+
+.intro-rt {width: calc(100% - 42.7%); padding: 11px 0 0 0; flex-grow: 1;}
+.intro-rt h3 {color: var(--clc-dark-txt);}
+.intro-rt p {font-size: 1.25rem; line-height: 1.4;}
+
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1299px) and (min-width: 1024px){	
+.intro-lt {width: 32%;}
+.intro-rt {width: calc(100% - 51%);}   
+}
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+	.intro-lt {width: 100%;}
+	.intro-rt {width: 100%; padding: 0;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px){
+	.intro {padding: 70px 0;}	
+	.intro-lt h2 {font-size: 2.5rem; line-height: 1.2;}
+	.intro-lt {margin: 0 0 59px 0;}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.intro {padding: 39px 0 50px;}
+	.intro-lt h2 {font-size: 2rem; line-height: 1.25; margin-bottom: 24px;}
+	.intro-lt small {margin-bottom: 22px;}
+	.intro-lt {margin: 0 0 40px 0;}
+	
+	.intro-lt h4 {font-size: 2rem; line-height: 1.25; margin-bottom: 23px;}
+}
+
+@media only screen and (max-width: 413px) and (min-width: 200px){
+	
+}
